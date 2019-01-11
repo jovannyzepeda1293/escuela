@@ -153,7 +153,7 @@ CREATE TABLE `messages` (
   PRIMARY KEY (`id`),
   KEY `index_messages_on_roomchat_id` (`roomchat_id`),
   CONSTRAINT `fk_rails_7e770ab6c7` FOREIGN KEY (`roomchat_id`) REFERENCES `roomchats` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -162,7 +162,7 @@ CREATE TABLE `messages` (
 
 LOCK TABLES `messages` WRITE;
 /*!40000 ALTER TABLE `messages` DISABLE KEYS */;
-INSERT INTO `messages` VALUES (1,1,2,3,'hola como estas ni;a',0,'2019-01-09 23:49:20','2019-01-09 23:49:20',NULL,NULL,NULL,NULL),(2,1,3,2,'bien y tu?',0,'2019-01-09 23:49:28','2019-01-09 23:49:28',NULL,NULL,NULL,NULL),(3,1,3,2,'hola gio miram e',0,'2019-01-09 23:59:12','2019-01-09 23:59:12','PIC022.JPG','image/jpeg',90449,'2019-01-09 23:59:12'),(4,1,2,3,'ok',0,'2019-01-09 23:59:44','2019-01-09 23:59:44',NULL,NULL,NULL,NULL),(5,1,3,2,'jeje',0,'2019-01-10 00:00:07','2019-01-10 00:00:07',NULL,NULL,NULL,NULL),(6,2,3,1,'oye',1,'2019-01-10 00:00:45','2019-01-10 00:00:45',NULL,NULL,NULL,NULL),(7,1,3,2,'oye',0,'2019-01-10 00:01:04','2019-01-10 00:01:04',NULL,NULL,NULL,NULL),(8,1,3,2,'hey xp',0,'2019-01-10 00:01:13','2019-01-10 00:01:13',NULL,NULL,NULL,NULL),(9,1,2,3,'hola',1,'2019-01-11 14:24:03','2019-01-11 14:24:03','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-11 14:24:03'),(10,1,2,3,'hola',1,'2019-01-11 14:24:14','2019-01-11 14:24:14',NULL,NULL,NULL,NULL),(11,1,2,3,'Como estas',1,'2019-01-11 14:24:19','2019-01-11 14:24:19',NULL,NULL,NULL,NULL),(12,1,2,3,'Quieres verme',1,'2019-01-11 14:24:31','2019-01-11 14:24:31','45859290_10204889989485026_5176241525113225216_o.jpg','image/jpeg',359961,'2019-01-11 14:24:30'),(13,1,2,3,'hola',1,'2019-01-11 14:39:48','2019-01-11 14:39:48',NULL,NULL,NULL,NULL),(14,1,2,3,'hola como estas',1,'2019-01-11 16:01:52','2019-01-11 16:01:52',NULL,NULL,NULL,NULL),(15,1,2,3,'jeje te ador',1,'2019-01-11 16:02:00','2019-01-11 16:02:00','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-11 16:02:00'),(16,1,2,3,'hola peuqe;a',1,'2019-01-11 17:41:25','2019-01-11 17:41:25',NULL,NULL,NULL,NULL),(17,1,2,3,'fd',1,'2019-01-11 17:41:30','2019-01-11 17:41:30','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-11 17:41:30');
+INSERT INTO `messages` VALUES (1,1,2,3,'hola como estas ni;a',0,'2019-01-09 23:49:20','2019-01-09 23:49:20',NULL,NULL,NULL,NULL),(2,1,3,2,'bien y tu?',0,'2019-01-09 23:49:28','2019-01-09 23:49:28',NULL,NULL,NULL,NULL),(3,1,3,2,'hola gio miram e',0,'2019-01-09 23:59:12','2019-01-09 23:59:12','PIC022.JPG','image/jpeg',90449,'2019-01-09 23:59:12'),(4,1,2,3,'ok',0,'2019-01-09 23:59:44','2019-01-09 23:59:44',NULL,NULL,NULL,NULL),(5,1,3,2,'jeje',0,'2019-01-10 00:00:07','2019-01-10 00:00:07',NULL,NULL,NULL,NULL),(6,2,3,1,'oye',1,'2019-01-10 00:00:45','2019-01-10 00:00:45',NULL,NULL,NULL,NULL),(7,1,3,2,'oye',0,'2019-01-10 00:01:04','2019-01-10 00:01:04',NULL,NULL,NULL,NULL),(8,1,3,2,'hey xp',0,'2019-01-10 00:01:13','2019-01-10 00:01:13',NULL,NULL,NULL,NULL),(9,1,2,3,'hola',1,'2019-01-11 14:24:03','2019-01-11 14:24:03','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-11 14:24:03'),(10,1,2,3,'hola',1,'2019-01-11 14:24:14','2019-01-11 14:24:14',NULL,NULL,NULL,NULL),(11,1,2,3,'Como estas',1,'2019-01-11 14:24:19','2019-01-11 14:24:19',NULL,NULL,NULL,NULL),(12,1,2,3,'Quieres verme',1,'2019-01-11 14:24:31','2019-01-11 14:24:31','45859290_10204889989485026_5176241525113225216_o.jpg','image/jpeg',359961,'2019-01-11 14:24:30'),(13,1,2,3,'hola',1,'2019-01-11 14:39:48','2019-01-11 14:39:48',NULL,NULL,NULL,NULL),(14,1,2,3,'hola como estas',1,'2019-01-11 16:01:52','2019-01-11 16:01:52',NULL,NULL,NULL,NULL),(15,1,2,3,'jeje te ador',1,'2019-01-11 16:02:00','2019-01-11 16:02:00','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-11 16:02:00'),(16,1,2,3,'hola peuqe;a',1,'2019-01-11 17:41:25','2019-01-11 17:41:25',NULL,NULL,NULL,NULL),(17,1,2,3,'fd',1,'2019-01-11 17:41:30','2019-01-11 17:41:30','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-11 17:41:30'),(18,1,2,3,'hola',1,'2019-01-11 18:34:41','2019-01-11 18:34:41',NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,7 +183,7 @@ CREATE TABLE `notifications` (
   PRIMARY KEY (`id`),
   KEY `index_notifications_on_user_id` (`user_id`),
   CONSTRAINT `fk_rails_b080fb4855` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,7 +192,7 @@ CREATE TABLE `notifications` (
 
 LOCK TABLES `notifications` WRITE;
 /*!40000 ALTER TABLE `notifications` DISABLE KEYS */;
-INSERT INTO `notifications` VALUES (1,1,'Ana visited your profile','/users/3/my_profile','2019-01-09 23:48:53','2019-01-09 23:48:53'),(2,3,'gio ha visitado tu perfil','/users/2/my_profile','2019-01-09 23:49:03','2019-01-09 23:49:03'),(3,2,'Ana ha visitado tu perfil','/users/3/my_profile','2019-01-09 23:49:06','2019-01-09 23:49:06'),(4,3,'gio te ha agregado a favoritos','/users/2/my_profile','2019-01-09 23:49:10','2019-01-09 23:49:10'),(5,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-09 23:49:20','2019-01-09 23:49:20'),(6,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-09 23:49:28','2019-01-09 23:49:28'),(7,2,'Ana visited your profile','/users/3/my_profile','2019-01-09 23:56:09','2019-01-09 23:56:09'),(8,2,'Ana visited your profile','/users/3/my_profile','2019-01-09 23:56:58','2019-01-09 23:56:58'),(9,2,'Ana added you to favorites','/users/3/my_profile','2019-01-09 23:57:01','2019-01-09 23:57:01'),(10,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-09 23:59:12','2019-01-09 23:59:12'),(11,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-09 23:59:44','2019-01-09 23:59:44'),(12,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:00:07','2019-01-10 00:00:07'),(13,1,'Ana ha visitado tu perfil','/users/3/my_profile','2019-01-10 00:00:40','2019-01-10 00:00:40'),(14,1,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:00:45','2019-01-10 00:00:45'),(15,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:01:04','2019-01-10 00:01:04'),(16,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:01:13','2019-01-10 00:01:13'),(17,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:03','2019-01-11 14:24:03'),(18,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:14','2019-01-11 14:24:14'),(19,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:19','2019-01-11 14:24:19'),(20,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:31','2019-01-11 14:24:31'),(21,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:39:48','2019-01-11 14:39:48'),(22,3,'gio visited your profile','/users/2/my_profile','2019-01-11 16:01:37','2019-01-11 16:01:37'),(23,3,'gio sent you a message','/users/2/message_users','2019-01-11 16:01:52','2019-01-11 16:01:52'),(24,3,'gio sent you a message','/users/2/message_users','2019-01-11 16:02:00','2019-01-11 16:02:00'),(25,3,'gio visited your profile','/users/2/my_profile','2019-01-11 17:14:03','2019-01-11 17:14:03'),(26,3,'gio visited your profile','/users/2/my_profile','2019-01-11 17:14:47','2019-01-11 17:14:47'),(27,3,'gio ha visitado tu perfil','/users/2/my_profile','2019-01-11 17:41:17','2019-01-11 17:41:17'),(28,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-11 17:41:25','2019-01-11 17:41:25'),(29,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-11 17:41:30','2019-01-11 17:41:30');
+INSERT INTO `notifications` VALUES (1,1,'Ana visited your profile','/users/3/my_profile','2019-01-09 23:48:53','2019-01-09 23:48:53'),(2,3,'gio ha visitado tu perfil','/users/2/my_profile','2019-01-09 23:49:03','2019-01-09 23:49:03'),(3,2,'Ana ha visitado tu perfil','/users/3/my_profile','2019-01-09 23:49:06','2019-01-09 23:49:06'),(4,3,'gio te ha agregado a favoritos','/users/2/my_profile','2019-01-09 23:49:10','2019-01-09 23:49:10'),(5,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-09 23:49:20','2019-01-09 23:49:20'),(6,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-09 23:49:28','2019-01-09 23:49:28'),(7,2,'Ana visited your profile','/users/3/my_profile','2019-01-09 23:56:09','2019-01-09 23:56:09'),(8,2,'Ana visited your profile','/users/3/my_profile','2019-01-09 23:56:58','2019-01-09 23:56:58'),(9,2,'Ana added you to favorites','/users/3/my_profile','2019-01-09 23:57:01','2019-01-09 23:57:01'),(10,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-09 23:59:12','2019-01-09 23:59:12'),(11,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-09 23:59:44','2019-01-09 23:59:44'),(12,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:00:07','2019-01-10 00:00:07'),(13,1,'Ana ha visitado tu perfil','/users/3/my_profile','2019-01-10 00:00:40','2019-01-10 00:00:40'),(14,1,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:00:45','2019-01-10 00:00:45'),(15,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:01:04','2019-01-10 00:01:04'),(16,2,'Ana te ha enviado un mensaje','/users/3/message_users','2019-01-10 00:01:13','2019-01-10 00:01:13'),(17,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:03','2019-01-11 14:24:03'),(18,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:14','2019-01-11 14:24:14'),(19,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:19','2019-01-11 14:24:19'),(20,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:24:31','2019-01-11 14:24:31'),(21,3,'gio sent you a message','/users/2/message_users','2019-01-11 14:39:48','2019-01-11 14:39:48'),(22,3,'gio visited your profile','/users/2/my_profile','2019-01-11 16:01:37','2019-01-11 16:01:37'),(23,3,'gio sent you a message','/users/2/message_users','2019-01-11 16:01:52','2019-01-11 16:01:52'),(24,3,'gio sent you a message','/users/2/message_users','2019-01-11 16:02:00','2019-01-11 16:02:00'),(25,3,'gio visited your profile','/users/2/my_profile','2019-01-11 17:14:03','2019-01-11 17:14:03'),(26,3,'gio visited your profile','/users/2/my_profile','2019-01-11 17:14:47','2019-01-11 17:14:47'),(27,3,'gio ha visitado tu perfil','/users/2/my_profile','2019-01-11 17:41:17','2019-01-11 17:41:17'),(28,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-11 17:41:25','2019-01-11 17:41:25'),(29,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-11 17:41:30','2019-01-11 17:41:30'),(30,3,'gio te ha enviado un mensaje','/users/2/message_users','2019-01-11 18:34:41','2019-01-11 18:34:41'),(31,3,'gio ha visitado tu perfil','/users/2/my_profile','2019-01-11 18:34:47','2019-01-11 18:34:47');
 /*!40000 ALTER TABLE `notifications` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -292,7 +292,7 @@ CREATE TABLE `suscriptions` (
   PRIMARY KEY (`id`),
   KEY `index_suscriptions_on_user_id` (`user_id`),
   CONSTRAINT `fk_rails_2077536774` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -301,7 +301,6 @@ CREATE TABLE `suscriptions` (
 
 LOCK TABLES `suscriptions` WRITE;
 /*!40000 ALTER TABLE `suscriptions` DISABLE KEYS */;
-INSERT INTO `suscriptions` VALUES (1,2,'cus_EJTyGe6z3GNcPg','2019-01-10','2019-01-10 00:02:32','2019-01-10 00:02:32');
 /*!40000 ALTER TABLE `suscriptions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -362,7 +361,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'zepedaroque@hotmail.com','$2a$11$8snlfVrZskof4OftxwEeLex1CF8aSF6YC.Old9PvWue1vWnHc0B0W',NULL,NULL,NULL,'JuLv4iotKxrb8MAJYsqo','2019-01-09 22:33:50','2019-01-08 23:11:13',NULL,0,1,2,'Gio',6,'1976-01-01','MX','JAL','Santa Anita',4,2,1,149,44,3,'Im a good personal ','2019-01-08 23:11:13','2019-01-10 00:00:40',NULL,NULL,NULL,NULL,2,43,0,'2019-01-09'),(2,'zepeda.roque32@gmail.com','$2a$11$aEcMrpIMhnx833r4jrcUvO9FStgl7Doe6IXZ.bxyOLsg0.Ieg80si',NULL,NULL,NULL,'o3teZEM2TYUuuoncdjmC','2019-01-09 22:30:10','2019-01-08 23:14:27',NULL,1,1,2,'gio',1,'1989-01-01','MX','',NULL,5,2,1,175,72,3,'I m intersting person','2019-01-08 23:14:27','2019-01-11 17:41:30','PIC138.JPG','image/jpeg',101376,'2019-01-11 17:14:22',3,30,11,'2019-01-09'),(3,'soporte@jplatinoamerica.com','$2a$11$UDLf2TtWER7EyiSRUwKzCe38ONWzOFXDVrp94L4XO7ogM./6Fdm0q',NULL,NULL,NULL,'phm2iiMCXgs7d1XEzvit','2019-01-09 23:47:42','2019-01-09 23:47:13',NULL,1,2,1,'Ana',NULL,NULL,'MX',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-01-09 23:47:13','2019-01-11 17:41:17','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-09 23:53:48',5,0,6,'2019-01-09');
+INSERT INTO `users` VALUES (1,'zepedaroque@hotmail.com','$2a$11$8snlfVrZskof4OftxwEeLex1CF8aSF6YC.Old9PvWue1vWnHc0B0W',NULL,NULL,NULL,'JuLv4iotKxrb8MAJYsqo','2019-01-09 22:33:50','2019-01-08 23:11:13',NULL,0,1,2,'Gio',6,'1976-01-01','MX','JAL','Santa Anita',4,2,1,149,44,3,'Im a good personal ','2019-01-08 23:11:13','2019-01-10 00:00:40',NULL,NULL,NULL,NULL,2,43,0,'2019-01-09'),(2,'zepeda.roque32@gmail.com','$2a$11$aEcMrpIMhnx833r4jrcUvO9FStgl7Doe6IXZ.bxyOLsg0.Ieg80si',NULL,NULL,NULL,'o3teZEM2TYUuuoncdjmC','2019-01-09 22:30:10','2019-01-08 23:14:27',NULL,0,1,2,'gio',1,'1989-01-01','MX','',NULL,5,2,1,175,72,3,'I m intersting person','2019-01-08 23:14:27','2019-01-11 22:17:32','PIC138.JPG','image/jpeg',101376,'2019-01-11 17:14:22',3,30,0,'2019-01-09'),(3,'soporte@jplatinoamerica.com','$2a$11$UDLf2TtWER7EyiSRUwKzCe38ONWzOFXDVrp94L4XO7ogM./6Fdm0q',NULL,NULL,NULL,'phm2iiMCXgs7d1XEzvit','2019-01-09 23:47:42','2019-01-09 23:47:13',NULL,1,2,1,'Ana',NULL,NULL,'MX',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-01-09 23:47:13','2019-01-11 18:34:47','49569626_2390653407628832_1565173884678832128_n.jpg','image/jpeg',65667,'2019-01-09 23:53:48',6,0,6,'2019-01-09');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -382,7 +381,7 @@ CREATE TABLE `views` (
   PRIMARY KEY (`id`),
   KEY `index_views_on_user_id` (`user_id`),
   CONSTRAINT `fk_rails_6a13b72c28` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -391,7 +390,7 @@ CREATE TABLE `views` (
 
 LOCK TABLES `views` WRITE;
 /*!40000 ALTER TABLE `views` DISABLE KEYS */;
-INSERT INTO `views` VALUES (1,3,1,'2019-01-09 23:48:53','2019-01-09 23:48:53'),(2,2,3,'2019-01-09 23:49:03','2019-01-09 23:49:03'),(3,3,2,'2019-01-09 23:49:06','2019-01-09 23:49:06'),(4,3,2,'2019-01-09 23:56:09','2019-01-09 23:56:09'),(5,3,2,'2019-01-09 23:56:58','2019-01-09 23:56:58'),(6,3,1,'2019-01-10 00:00:40','2019-01-10 00:00:40'),(7,2,3,'2019-01-11 16:01:37','2019-01-11 16:01:37'),(8,2,3,'2019-01-11 17:14:03','2019-01-11 17:14:03'),(9,2,3,'2019-01-11 17:14:47','2019-01-11 17:14:47'),(10,2,3,'2019-01-11 17:41:17','2019-01-11 17:41:17');
+INSERT INTO `views` VALUES (1,3,1,'2019-01-09 23:48:53','2019-01-09 23:48:53'),(2,2,3,'2019-01-09 23:49:03','2019-01-09 23:49:03'),(3,3,2,'2019-01-09 23:49:06','2019-01-09 23:49:06'),(4,3,2,'2019-01-09 23:56:09','2019-01-09 23:56:09'),(5,3,2,'2019-01-09 23:56:58','2019-01-09 23:56:58'),(6,3,1,'2019-01-10 00:00:40','2019-01-10 00:00:40'),(7,2,3,'2019-01-11 16:01:37','2019-01-11 16:01:37'),(8,2,3,'2019-01-11 17:14:03','2019-01-11 17:14:03'),(9,2,3,'2019-01-11 17:14:47','2019-01-11 17:14:47'),(10,2,3,'2019-01-11 17:41:17','2019-01-11 17:41:17'),(11,2,3,'2019-01-11 18:34:47','2019-01-11 18:34:47');
 /*!40000 ALTER TABLE `views` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -433,4 +432,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-12  0:01:01
+-- Dump completed on 2019-01-12  4:00:04
